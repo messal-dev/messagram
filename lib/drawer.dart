@@ -4,7 +4,7 @@ class DrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Text('Fuck'),
+      child: Text('Hello'),
     );
   }
 }

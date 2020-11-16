@@ -109,12 +109,16 @@ class ContactScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(
-                      'Messal Dev Freelancer',
-                      style: TextStyle(
-                        fontSize: 17,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                    Expanded(
+                      child: Text(
+                        'Messal Dev Freelancer',
+                        softWrap: true,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     Container(
