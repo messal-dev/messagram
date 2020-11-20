@@ -1,53 +1,31 @@
 import 'package:flutter/material.dart';
 
-import './utilities.dart';
-import './drawer.dart';
+import 'utilities.dart';
 
-import './models/room_model.dart';
-import './models/contact_model.dart';
+import 'models/room_model.dart';
+import 'models/contact_model.dart';
 
 class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return Scaffold(
-      backgroundColor: primaryColor,
-      drawer: DrawerItem(),
-      appBar: AppBar(
-        backgroundColor: secondaryColor,
-        title: Text('Messagram'),
-        actions: [
-          IconButton(
-            icon: Icon(
-              Icons.camera_alt,
-              color: Colors.white,
-            ),
-            onPressed: null,
-          ),
-        ],
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          width: size.width,
-          child: Column(
-            children: [
-              _searchBuilder(size),
-              _roomsBuilder(),
-              Divider(color: secondaryColor),
-              for (int i = 0; i < contacts.length; i++)
-                if ((i % 3) == 0 && (i > 0)) ...[
-                  _profileBuilder(contacts[i]),
-                  _adsBuilder()
-                ] else
-                  _profileBuilder(contacts[i]),
-            ],
-          ),
+    return SingleChildScrollView(
+      child: Container(
+        width: size.width,
+        child: Column(
+          children: [
+            _searchBuilder(size),
+            _roomsBuilder(),
+            Divider(color: secondaryColor),
+            for (int i = 0; i < contacts.length; i++)
+              if ((i % 3) == 0 && (i > 0)) ...[
+                _profileBuilder(contacts[i]),
+                _adsBuilder()
+              ] else
+                _profileBuilder(contacts[i]),
+          ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.edit),
-        onPressed: null,
       ),
     );
   }
