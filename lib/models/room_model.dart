@@ -7,7 +7,7 @@ class RoomModel {
 }
 
 final List<RoomModel> rooms = [
-  RoomModel('Siv D Messal', 'assets/messal.jpg', true),
+  RoomModel('Siv D Messal', 'assets/sakuna.jpg', true),
   RoomModel('Monkey D Luffy', 'assets/luffy.jpg', true),
   RoomModel('Boa Hancock', 'assets/boa-hancock.jpg', true),
   RoomModel('Roronoa Zoro', 'assets/zoro.jpg', true),

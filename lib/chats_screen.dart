@@ -57,7 +57,7 @@ class ContactScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: secondaryColor,
                   image: DecorationImage(
-                    image: AssetImage('assets/messal.jpg'),
+                    image: AssetImage('assets/sakuna.jpg'),
                     fit: BoxFit.cover,
                   ),
                 ),

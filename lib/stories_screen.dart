@@ -22,8 +22,8 @@ class StoriesScreen extends StatelessWidget {
         children: [
           _storyItemBuilder(
             'Siv D Messal',
-            'assets/messal.jpg',
-            'assets/messal.jpg',
+            'assets/sakuna.jpg',
+            'assets/sakuna.jpg',
             0,
           ),
           _storyItemBuilder(
